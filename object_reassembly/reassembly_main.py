@@ -23,7 +23,7 @@ def full_reassembly(obj):
     obj.tripplet_matching(np.pi / 10, 0.01)
     obj.find_final_transforms()
     print("Reassembled object.")
-    compas_show(fragments=obj.fragments, dist=10)
+    compas_show(fragments=obj.fragments, dist=50)
 
 
 def pairwise_reassembly(obj):
