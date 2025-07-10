@@ -17,7 +17,7 @@ def full_reassembly(obj):
     obj.create_random_pose()
     obj.apply_random_transf()
     print("Scrambled object.")
-    compas_show(obj.kpts, obj.fragments)
+    # compas_show(obj.kpts, obj.fragments)
     obj.find_transformations()
     obj.create_inverse_transformations_for_existing_pairs()
     obj.tripplet_matching(np.pi / 10, 0.01)
